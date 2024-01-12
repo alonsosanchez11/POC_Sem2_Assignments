@@ -1,3 +1,3 @@
-bit_of_text = "hello"
-for char in bit_of_text:
-   print(ord(char))
+text1 = input("Enter some text: ")
+text2 = input("Enter some more text: ")
+print(text1 == text2)
