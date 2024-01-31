@@ -1,8 +1,15 @@
-value1 = int(input('Enter integer 1: '))
-value2 = int(input('Enter integer 2: '))
-print('The inverse of', value1, 'is', 1/value1)
-print('The inverse of', value2, 'is', 1/value2)
+number1 = 0
+number2 = 0
+try:
+    number1 = int(input("Enter a number"))
+    number2 = int(input("Enter a number"))
+
 except ValueError:
-print('You did not provide a number, so I will not calculate the inverse')
+    print("integer was not given")
+    
+
+try:
+   answer = number1 / number2
+   print("The answer is", answer)  
 except ZeroDivisionError:
-print('You provided 0 and division by 0 is not possible, sorry')
+    print("division by zero is not possible")
